@@ -1,0 +1,9 @@
+2025-09-06 14:26:18 | INFO | Processed JSON message: {'message': 'Streaming data is fun.', 'author': 'Diana'}
+2025-09-06 14:26:18 | INFO | Message received from author: Diana
+2025-09-06 14:26:18 | INFO | Updated author counts: {'Eve': 74, 'Alice': 106, 'Charlie': 65, 'Diana': 120, 'Bob': 74}
+2025-09-06 14:26:19 | INFO | Processed JSON message: {'message': 'Have a great day!', 'author': 'Diana'}
+2025-09-06 14:26:19 | INFO | Message received from author: Diana
+2025-09-06 14:26:19 | INFO | Updated author counts: {'Eve': 74, 'Alice': 106, 'Charlie': 65, 'Diana': 121, 'Bob': 74}
+2025-09-06 14:26:20 | INFO | Processed JSON message: {'message': 'I love Python!', 'author': 'Alice'}
+2025-09-06 14:26:20 | INFO | Message received from author: Alice
+2025-09-06 14:26:20 | INFO | Updated author counts: {'Eve': 74, 'Alice': 107, 'Charlie': 65, 'Diana': 121, 'Bob': 74}
