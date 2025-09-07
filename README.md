@@ -153,7 +153,7 @@ Kafka topic: manufacturing_csv_topic.
 
 ---
 
-## Task 6: Customer CSC Consumer
+## Task 6: Customer CSV Consumer
 
 The csv_consumer_meyer.py consumer monitors CSV messages. It maintains a sliding window of recent readings and raises alerts if temperature spikes or vibration thresholds are exceeded.
 
