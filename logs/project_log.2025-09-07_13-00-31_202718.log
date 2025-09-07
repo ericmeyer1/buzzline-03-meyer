@@ -1,0 +1,105 @@
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 3, 'idle': 3, 'error': 3, 'maintenance': 2}
+2025-09-07 13:00:31 | WARNING | ALERT: Machine M003 reported error E101!
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 3, 'idle': 3, 'error': 3, 'maintenance': 3}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 4, 'idle': 3, 'error': 3, 'maintenance': 3}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 4, 'idle': 4, 'error': 3, 'maintenance': 3}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 4, 'idle': 4, 'error': 4, 'maintenance': 3}
+2025-09-07 13:00:31 | WARNING | ALERT: Machine M003 reported error E101!
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 4, 'idle': 4, 'error': 4, 'maintenance': 4}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 5, 'idle': 4, 'error': 4, 'maintenance': 4}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 5, 'idle': 5, 'error': 4, 'maintenance': 4}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 5, 'idle': 5, 'error': 5, 'maintenance': 4}
+2025-09-07 13:00:31 | WARNING | ALERT: Machine M003 reported error E101!
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 5, 'idle': 5, 'error': 5, 'maintenance': 5}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 6, 'idle': 5, 'error': 5, 'maintenance': 5}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 6, 'idle': 6, 'error': 5, 'maintenance': 5}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 6, 'idle': 6, 'error': 6, 'maintenance': 5}
+2025-09-07 13:00:31 | WARNING | ALERT: Machine M003 reported error E101!
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 6, 'idle': 6, 'error': 6, 'maintenance': 6}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 7, 'idle': 6, 'error': 6, 'maintenance': 6}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 7, 'idle': 7, 'error': 6, 'maintenance': 6}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 7, 'idle': 7, 'error': 7, 'maintenance': 6}
+2025-09-07 13:00:31 | WARNING | ALERT: Machine M003 reported error E101!
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 7, 'idle': 7, 'error': 7, 'maintenance': 7}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 8, 'idle': 7, 'error': 7, 'maintenance': 7}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 8, 'idle': 8, 'error': 7, 'maintenance': 7}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 8, 'idle': 8, 'error': 8, 'maintenance': 7}
+2025-09-07 13:00:31 | WARNING | ALERT: Machine M003 reported error E101!
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 8, 'idle': 8, 'error': 8, 'maintenance': 8}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 9, 'idle': 8, 'error': 8, 'maintenance': 8}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 9, 'idle': 9, 'error': 8, 'maintenance': 8}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 9, 'idle': 9, 'error': 9, 'maintenance': 8}
+2025-09-07 13:00:31 | WARNING | ALERT: Machine M003 reported error E101!
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 9, 'idle': 9, 'error': 9, 'maintenance': 9}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 10, 'idle': 9, 'error': 9, 'maintenance': 9}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 10, 'idle': 10, 'error': 9, 'maintenance': 9}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 10, 'idle': 10, 'error': 10, 'maintenance': 9}
+2025-09-07 13:00:31 | WARNING | ALERT: Machine M003 reported error E101!
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 10, 'idle': 10, 'error': 10, 'maintenance': 10}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 11, 'idle': 10, 'error': 10, 'maintenance': 10}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 11, 'idle': 11, 'error': 10, 'maintenance': 10}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 11, 'idle': 11, 'error': 11, 'maintenance': 10}
+2025-09-07 13:00:31 | WARNING | ALERT: Machine M003 reported error E101!
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 11, 'idle': 11, 'error': 11, 'maintenance': 11}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 12, 'idle': 11, 'error': 11, 'maintenance': 11}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 12, 'idle': 12, 'error': 11, 'maintenance': 11}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 12, 'idle': 12, 'error': 12, 'maintenance': 11}
+2025-09-07 13:00:31 | WARNING | ALERT: Machine M003 reported error E101!
+2025-09-07 13:00:33 | INFO | Received message: {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 13:00:33 | INFO | Updated status counts: {'running': 12, 'idle': 12, 'error': 12, 'maintenance': 12}
+2025-09-07 13:00:35 | INFO | Received message: {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 13:00:35 | INFO | Updated status counts: {'running': 13, 'idle': 12, 'error': 12, 'maintenance': 12}
+2025-09-07 13:00:37 | INFO | Received message: {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 13:00:37 | INFO | Updated status counts: {'running': 13, 'idle': 13, 'error': 12, 'maintenance': 12}
+2025-09-07 13:00:39 | INFO | Received message: {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 13:00:39 | INFO | Updated status counts: {'running': 13, 'idle': 13, 'error': 13, 'maintenance': 12}
+2025-09-07 13:00:39 | WARNING | ALERT: Machine M003 reported error E101!
+2025-09-07 13:00:41 | INFO | Received message: {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 13:00:41 | INFO | Updated status counts: {'running': 13, 'idle': 13, 'error': 13, 'maintenance': 13}
+2025-09-07 13:00:43 | INFO | Received message: {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 13:00:43 | INFO | Updated status counts: {'running': 14, 'idle': 13, 'error': 13, 'maintenance': 13}
+2025-09-07 13:00:45 | INFO | Received message: {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 13:00:45 | INFO | Updated status counts: {'running': 14, 'idle': 14, 'error': 13, 'maintenance': 13}
+2025-09-07 13:00:47 | INFO | Received message: {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 13:00:47 | INFO | Updated status counts: {'running': 14, 'idle': 14, 'error': 14, 'maintenance': 13}
+2025-09-07 13:00:47 | WARNING | ALERT: Machine M003 reported error E101!
+2025-09-07 13:00:49 | INFO | Received message: {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 13:00:49 | INFO | Updated status counts: {'running': 14, 'idle': 14, 'error': 14, 'maintenance': 14}
+2025-09-07 13:00:50 | WARNING | Consumer interrupted by user.
+2025-09-07 13:00:50 | INFO | Kafka consumer closed.

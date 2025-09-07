@@ -1,0 +1,437 @@
+2025-09-06 14:26:18 | INFO | Processed JSON message: {'message': 'Streaming data is fun.', 'author': 'Diana'}
+2025-09-06 14:26:18 | INFO | Message received from author: Diana
+2025-09-06 14:26:18 | INFO | Updated author counts: {'Eve': 74, 'Alice': 106, 'Charlie': 65, 'Diana': 120, 'Bob': 74}
+2025-09-06 14:26:19 | INFO | Processed JSON message: {'message': 'Have a great day!', 'author': 'Diana'}
+2025-09-06 14:26:19 | INFO | Message received from author: Diana
+2025-09-06 14:26:19 | INFO | Updated author counts: {'Eve': 74, 'Alice': 106, 'Charlie': 65, 'Diana': 121, 'Bob': 74}
+2025-09-06 14:26:20 | INFO | Processed JSON message: {'message': 'I love Python!', 'author': 'Alice'}
+2025-09-06 14:26:20 | INFO | Message received from author: Alice
+2025-09-06 14:26:20 | INFO | Updated author counts: {'Eve': 74, 'Alice': 107, 'Charlie': 65, 'Diana': 121, 'Bob': 74}
+2025-09-07 12:20:14 | INFO | Logging to file: logs/project_log.log
+2025-09-07 12:20:14 | INFO | Log sanitization enabled, personal info removed
+2025-09-07 12:20:14 | INFO | START consumer.
+2025-09-07 12:20:14 | INFO | Kafka topic: buzzline_json
+2025-09-07 12:20:14 | INFO | Kafka consumer group id: buzz_group
+2025-09-07 12:20:14 | INFO | Consumer: Topic 'buzzline_json' and group 'buzz_group'...
+2025-09-07 12:20:14 | INFO | Kafka broker address: localhost:9092
+2025-09-07 12:20:14 | INFO | Creating Kafka consumer. Topic='buzzline_json' and group ID='buzz_group'.
+2025-09-07 12:20:15 | INFO | Kafka consumer created successfully.
+2025-09-07 12:20:15 | INFO | Polling messages from topic 'buzzline_json'...
+2025-09-07 12:20:18 | INFO | Processed JSON message: {'message': 'I love Python!', 'author': 'Alice'}
+2025-09-07 12:20:18 | INFO | Message received from author: Alice
+2025-09-07 12:20:18 | INFO | Updated author counts: {'Alice': 1}
+2025-09-07 12:20:18 | INFO | Processed JSON message: {'message': 'Streaming data is fun.', 'author': 'Charlie'}
+2025-09-07 12:20:18 | INFO | Message received from author: Charlie
+2025-09-07 12:20:18 | INFO | Updated author counts: {'Alice': 1, 'Charlie': 1}
+2025-09-07 12:20:29 | WARNING | Consumer interrupted by user.
+2025-09-07 12:20:29 | INFO | Kafka consumer for topic 'buzzline_json' closed.
+2025-09-07 12:20:29 | INFO | END consumer for topic 'buzzline_json' and group 'buzz_group'.
+2025-09-07 12:20:36 | INFO | Logging to file: logs/project_log.log
+2025-09-07 12:20:36 | INFO | Log sanitization enabled, personal info removed
+2025-09-07 12:20:36 | INFO | Project root: PROJECT_ROOT
+2025-09-07 12:20:36 | INFO | Data folder: PROJECT_ROOT/data
+2025-09-07 12:20:36 | INFO | Data file: PROJECT_ROOT/data/buzz.json
+2025-09-07 12:20:36 | INFO | START producer.
+2025-09-07 12:20:36 | INFO | Kafka broker address: localhost:9092
+2025-09-07 12:20:36 | INFO | Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'fyTwFSU3TlSmymUFvycPSg', 'controller_id': 1}
+2025-09-07 12:20:36 | INFO | Kafka topic: buzzline_json
+2025-09-07 12:20:36 | INFO | Message interval: 1 seconds
+2025-09-07 12:20:36 | INFO | Kafka broker address: localhost:9092
+2025-09-07 12:20:36 | INFO | Connecting to Kafka broker at localhost:9092...
+2025-09-07 12:20:36 | INFO | Kafka producer successfully created.
+2025-09-07 12:20:36 | INFO | Kafka broker address: localhost:9092
+2025-09-07 12:20:36 | INFO | Topic 'buzzline_json' already exists. Recreating fresh...
+2025-09-07 12:20:36 | INFO | Requested deletion of topic 'buzzline_json'.
+2025-09-07 12:20:36 | INFO | Topic 'buzzline_json' created successfully.
+2025-09-07 12:20:36 | INFO | Kafka topic 'buzzline_json' is ready.
+2025-09-07 12:20:36 | INFO | Starting message production to topic 'buzzline_json'...
+2025-09-07 12:20:36 | INFO | Opening data file in read mode: PROJECT_ROOT/data/buzz.json
+2025-09-07 12:20:36 | INFO | Reading data from file: PROJECT_ROOT/data/buzz.json
+2025-09-07 12:20:36 | INFO | Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Eve'}
+2025-09-07 12:20:37 | INFO | Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Alice'}
+2025-09-07 12:20:38 | INFO | Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Charlie'}
+2025-09-07 12:20:39 | INFO | Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-09-07 12:20:41 | INFO | Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-09-07 12:20:42 | INFO | Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Alice'}
+2025-09-07 12:20:43 | INFO | Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Diana'}
+2025-09-07 12:20:44 | INFO | Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-09-07 12:20:45 | INFO | Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Eve'}
+2025-09-07 12:20:46 | INFO | Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Alice'}
+2025-09-07 12:20:47 | INFO | Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Diana'}
+2025-09-07 12:20:47 | INFO | Logging to file: logs/project_log.log
+2025-09-07 12:20:47 | INFO | Log sanitization enabled, personal info removed
+2025-09-07 12:20:47 | INFO | START consumer.
+2025-09-07 12:20:47 | INFO | Kafka topic: buzzline_json
+2025-09-07 12:20:47 | INFO | Kafka consumer group id: buzz_group
+2025-09-07 12:20:47 | INFO | Consumer: Topic 'buzzline_json' and group 'buzz_group'...
+2025-09-07 12:20:47 | INFO | Kafka broker address: localhost:9092
+2025-09-07 12:20:47 | INFO | Creating Kafka consumer. Topic='buzzline_json' and group ID='buzz_group'.
+2025-09-07 12:20:47 | INFO | Kafka consumer created successfully.
+2025-09-07 12:20:47 | INFO | Polling messages from topic 'buzzline_json'...
+2025-09-07 12:20:48 | INFO | Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Diana'}
+2025-09-07 12:20:49 | INFO | Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Charlie'}
+2025-09-07 12:20:50 | INFO | Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Bob'}
+2025-09-07 12:20:50 | INFO | Processed JSON message: {'message': 'Distributed systems are fascinating.', 'author': 'Alice'}
+2025-09-07 12:20:50 | INFO | Message received from author: Alice
+2025-09-07 12:20:50 | INFO | Updated author counts: {'Alice': 1}
+2025-09-07 12:20:50 | INFO | Processed JSON message: {'message': 'Have a great day!', 'author': 'Charlie'}
+2025-09-07 12:20:50 | INFO | Message received from author: Charlie
+2025-09-07 12:20:50 | INFO | Updated author counts: {'Alice': 1, 'Charlie': 1}
+2025-09-07 12:20:50 | INFO | Processed JSON message: {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-09-07 12:20:50 | INFO | Message received from author: Alice
+2025-09-07 12:20:50 | INFO | Updated author counts: {'Alice': 2, 'Charlie': 1}
+2025-09-07 12:20:50 | INFO | Processed JSON message: {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-09-07 12:20:50 | INFO | Message received from author: Diana
+2025-09-07 12:20:50 | INFO | Updated author counts: {'Alice': 2, 'Charlie': 1, 'Diana': 1}
+2025-09-07 12:20:50 | INFO | Processed JSON message: {'message': 'Buzz messages for everyone.', 'author': 'Alice'}
+2025-09-07 12:20:50 | INFO | Message received from author: Alice
+2025-09-07 12:20:50 | INFO | Updated author counts: {'Alice': 3, 'Charlie': 1, 'Diana': 1}
+2025-09-07 12:20:50 | INFO | Processed JSON message: {'message': 'Hello, Kafka world!', 'author': 'Diana'}
+2025-09-07 12:20:50 | INFO | Message received from author: Diana
+2025-09-07 12:20:50 | INFO | Updated author counts: {'Alice': 3, 'Charlie': 1, 'Diana': 2}
+2025-09-07 12:20:50 | INFO | Processed JSON message: {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-09-07 12:20:50 | INFO | Message received from author: Eve
+2025-09-07 12:20:50 | INFO | Updated author counts: {'Alice': 3, 'Charlie': 1, 'Diana': 2, 'Eve': 1}
+2025-09-07 12:20:50 | INFO | Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Eve'}
+2025-09-07 12:20:50 | INFO | Message received from author: Eve
+2025-09-07 12:20:50 | INFO | Updated author counts: {'Alice': 3, 'Charlie': 1, 'Diana': 2, 'Eve': 2}
+2025-09-07 12:20:50 | INFO | Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Alice'}
+2025-09-07 12:20:50 | INFO | Message received from author: Alice
+2025-09-07 12:20:50 | INFO | Updated author counts: {'Alice': 4, 'Charlie': 1, 'Diana': 2, 'Eve': 2}
+2025-09-07 12:20:50 | INFO | Processed JSON message: {'message': 'Data engineering is my passion.', 'author': 'Diana'}
+2025-09-07 12:20:50 | INFO | Message received from author: Diana
+2025-09-07 12:20:50 | INFO | Updated author counts: {'Alice': 4, 'Charlie': 1, 'Diana': 3, 'Eve': 2}
+2025-09-07 12:20:50 | INFO | Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Diana'}
+2025-09-07 12:20:50 | INFO | Message received from author: Diana
+2025-09-07 12:20:50 | INFO | Updated author counts: {'Alice': 4, 'Charlie': 1, 'Diana': 4, 'Eve': 2}
+2025-09-07 12:20:50 | INFO | Processed JSON message: {'message': 'Kafka is awesome.', 'author': 'Charlie'}
+2025-09-07 12:20:50 | INFO | Message received from author: Charlie
+2025-09-07 12:20:50 | INFO | Updated author counts: {'Alice': 4, 'Charlie': 2, 'Diana': 4, 'Eve': 2}
+2025-09-07 12:20:50 | INFO | Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Bob'}
+2025-09-07 12:20:50 | INFO | Message received from author: Bob
+2025-09-07 12:20:50 | INFO | Updated author counts: {'Alice': 4, 'Charlie': 2, 'Diana': 4, 'Eve': 2, 'Bob': 1}
+2025-09-07 12:20:51 | INFO | Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Bob'}
+2025-09-07 12:20:51 | INFO | Processed JSON message: {'message': 'I love Python!', 'author': 'Bob'}
+2025-09-07 12:20:51 | INFO | Message received from author: Bob
+2025-09-07 12:20:51 | INFO | Updated author counts: {'Alice': 4, 'Charlie': 2, 'Diana': 4, 'Eve': 2, 'Bob': 2}
+2025-09-07 12:20:52 | INFO | Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-09-07 12:20:52 | INFO | Processed JSON message: {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-09-07 12:20:52 | INFO | Message received from author: Eve
+2025-09-07 12:20:52 | INFO | Updated author counts: {'Alice': 4, 'Charlie': 2, 'Diana': 4, 'Eve': 3, 'Bob': 2}
+2025-09-07 12:20:53 | INFO | Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Eve'}
+2025-09-07 12:20:53 | INFO | Processed JSON message: {'message': 'I love Python!', 'author': 'Eve'}
+2025-09-07 12:20:53 | INFO | Message received from author: Eve
+2025-09-07 12:20:53 | INFO | Updated author counts: {'Alice': 4, 'Charlie': 2, 'Diana': 4, 'Eve': 4, 'Bob': 2}
+2025-09-07 12:20:54 | INFO | Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Alice'}
+2025-09-07 12:20:54 | INFO | Processed JSON message: {'message': 'Buzz messages for everyone.', 'author': 'Alice'}
+2025-09-07 12:20:54 | INFO | Message received from author: Alice
+2025-09-07 12:20:54 | INFO | Updated author counts: {'Alice': 5, 'Charlie': 2, 'Diana': 4, 'Eve': 4, 'Bob': 2}
+2025-09-07 12:20:55 | INFO | Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Alice'}
+2025-09-07 12:20:55 | INFO | Processed JSON message: {'message': 'This is a buzz message.', 'author': 'Alice'}
+2025-09-07 12:20:55 | INFO | Message received from author: Alice
+2025-09-07 12:20:55 | INFO | Updated author counts: {'Alice': 6, 'Charlie': 2, 'Diana': 4, 'Eve': 4, 'Bob': 2}
+2025-09-07 12:20:56 | INFO | Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Diana'}
+2025-09-07 12:20:56 | INFO | Processed JSON message: {'message': 'Data engineering is my passion.', 'author': 'Diana'}
+2025-09-07 12:20:56 | INFO | Message received from author: Diana
+2025-09-07 12:20:56 | INFO | Updated author counts: {'Alice': 6, 'Charlie': 2, 'Diana': 5, 'Eve': 4, 'Bob': 2}
+2025-09-07 12:20:59 | INFO | Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Eve'}
+2025-09-07 12:20:59 | INFO | Processed JSON message: {'message': 'I love Python!', 'author': 'Eve'}
+2025-09-07 12:20:59 | INFO | Message received from author: Eve
+2025-09-07 12:20:59 | INFO | Updated author counts: {'Alice': 6, 'Charlie': 2, 'Diana': 5, 'Eve': 5, 'Bob': 2}
+2025-09-07 12:21:00 | INFO | Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Charlie'}
+2025-09-07 12:21:00 | INFO | Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Charlie'}
+2025-09-07 12:21:00 | INFO | Message received from author: Charlie
+2025-09-07 12:21:00 | INFO | Updated author counts: {'Alice': 6, 'Charlie': 3, 'Diana': 5, 'Eve': 5, 'Bob': 2}
+2025-09-07 12:21:01 | INFO | Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Bob'}
+2025-09-07 12:21:01 | INFO | Processed JSON message: {'message': 'Have a great day!', 'author': 'Bob'}
+2025-09-07 12:21:01 | INFO | Message received from author: Bob
+2025-09-07 12:21:01 | INFO | Updated author counts: {'Alice': 6, 'Charlie': 3, 'Diana': 5, 'Eve': 5, 'Bob': 3}
+2025-09-07 12:21:02 | INFO | Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-09-07 12:21:02 | INFO | Processed JSON message: {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-09-07 12:21:02 | INFO | Message received from author: Alice
+2025-09-07 12:21:02 | INFO | Updated author counts: {'Alice': 7, 'Charlie': 3, 'Diana': 5, 'Eve': 5, 'Bob': 3}
+2025-09-07 12:21:03 | INFO | Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Diana'}
+2025-09-07 12:21:03 | INFO | Processed JSON message: {'message': 'Kafka is awesome.', 'author': 'Diana'}
+2025-09-07 12:21:03 | INFO | Message received from author: Diana
+2025-09-07 12:21:03 | INFO | Updated author counts: {'Alice': 7, 'Charlie': 3, 'Diana': 6, 'Eve': 5, 'Bob': 3}
+2025-09-07 12:21:04 | INFO | Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Diana'}
+2025-09-07 12:21:04 | INFO | Processed JSON message: {'message': 'Kafka is awesome.', 'author': 'Diana'}
+2025-09-07 12:21:04 | INFO | Message received from author: Diana
+2025-09-07 12:21:04 | INFO | Updated author counts: {'Alice': 7, 'Charlie': 3, 'Diana': 7, 'Eve': 5, 'Bob': 3}
+2025-09-07 12:21:05 | INFO | Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Bob'}
+2025-09-07 12:21:05 | INFO | Processed JSON message: {'message': 'Hello, Kafka world!', 'author': 'Bob'}
+2025-09-07 12:21:05 | INFO | Message received from author: Bob
+2025-09-07 12:21:05 | INFO | Updated author counts: {'Alice': 7, 'Charlie': 3, 'Diana': 7, 'Eve': 5, 'Bob': 4}
+2025-09-07 12:21:06 | INFO | Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-09-07 12:21:06 | INFO | Processed JSON message: {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-09-07 12:21:06 | INFO | Message received from author: Diana
+2025-09-07 12:21:06 | INFO | Updated author counts: {'Alice': 7, 'Charlie': 3, 'Diana': 8, 'Eve': 5, 'Bob': 4}
+2025-09-07 12:21:07 | INFO | Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Diana'}
+2025-09-07 12:21:07 | INFO | Processed JSON message: {'message': 'I love Python!', 'author': 'Diana'}
+2025-09-07 12:21:07 | INFO | Message received from author: Diana
+2025-09-07 12:21:07 | INFO | Updated author counts: {'Alice': 7, 'Charlie': 3, 'Diana': 9, 'Eve': 5, 'Bob': 4}
+2025-09-07 12:21:08 | INFO | Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Alice'}
+2025-09-07 12:21:08 | INFO | Processed JSON message: {'message': 'Have a great day!', 'author': 'Alice'}
+2025-09-07 12:21:08 | INFO | Message received from author: Alice
+2025-09-07 12:21:08 | INFO | Updated author counts: {'Alice': 8, 'Charlie': 3, 'Diana': 9, 'Eve': 5, 'Bob': 4}
+2025-09-07 12:21:09 | INFO | Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Charlie'}
+2025-09-07 12:21:09 | INFO | Processed JSON message: {'message': 'Hello, Kafka world!', 'author': 'Charlie'}
+2025-09-07 12:21:09 | INFO | Message received from author: Charlie
+2025-09-07 12:21:09 | INFO | Updated author counts: {'Alice': 8, 'Charlie': 4, 'Diana': 9, 'Eve': 5, 'Bob': 4}
+2025-09-07 12:21:10 | INFO | Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Diana'}
+2025-09-07 12:21:10 | INFO | Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Diana'}
+2025-09-07 12:21:10 | INFO | Message received from author: Diana
+2025-09-07 12:21:10 | INFO | Updated author counts: {'Alice': 8, 'Charlie': 4, 'Diana': 10, 'Eve': 5, 'Bob': 4}
+2025-09-07 12:21:11 | INFO | Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Bob'}
+2025-09-07 12:21:11 | INFO | Processed JSON message: {'message': 'I love Python!', 'author': 'Bob'}
+2025-09-07 12:21:11 | INFO | Message received from author: Bob
+2025-09-07 12:21:11 | INFO | Updated author counts: {'Alice': 8, 'Charlie': 4, 'Diana': 10, 'Eve': 5, 'Bob': 5}
+2025-09-07 12:21:12 | INFO | Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-09-07 12:21:12 | INFO | Processed JSON message: {'message': 'Have a great day!', 'author': 'Diana'}
+2025-09-07 12:21:12 | INFO | Message received from author: Diana
+2025-09-07 12:21:12 | INFO | Updated author counts: {'Alice': 8, 'Charlie': 4, 'Diana': 11, 'Eve': 5, 'Bob': 5}
+2025-09-07 12:21:13 | INFO | Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Alice'}
+2025-09-07 12:21:13 | INFO | Processed JSON message: {'message': 'Hello, Kafka world!', 'author': 'Alice'}
+2025-09-07 12:21:13 | INFO | Message received from author: Alice
+2025-09-07 12:21:13 | INFO | Updated author counts: {'Alice': 9, 'Charlie': 4, 'Diana': 11, 'Eve': 5, 'Bob': 5}
+2025-09-07 12:21:14 | INFO | Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Alice'}
+2025-09-07 12:21:14 | INFO | Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Alice'}
+2025-09-07 12:21:14 | INFO | Message received from author: Alice
+2025-09-07 12:21:14 | INFO | Updated author counts: {'Alice': 10, 'Charlie': 4, 'Diana': 11, 'Eve': 5, 'Bob': 5}
+2025-09-07 12:21:15 | INFO | Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Charlie'}
+2025-09-07 12:21:15 | INFO | Processed JSON message: {'message': 'Buzz messages for everyone.', 'author': 'Charlie'}
+2025-09-07 12:21:15 | INFO | Message received from author: Charlie
+2025-09-07 12:21:15 | INFO | Updated author counts: {'Alice': 10, 'Charlie': 5, 'Diana': 11, 'Eve': 5, 'Bob': 5}
+2025-09-07 12:21:16 | INFO | Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Bob'}
+2025-09-07 12:21:16 | INFO | Processed JSON message: {'message': 'Buzz messages for everyone.', 'author': 'Bob'}
+2025-09-07 12:21:16 | INFO | Message received from author: Bob
+2025-09-07 12:21:16 | INFO | Updated author counts: {'Alice': 10, 'Charlie': 5, 'Diana': 11, 'Eve': 5, 'Bob': 6}
+2025-09-07 12:21:17 | INFO | Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Diana'}
+2025-09-07 12:21:17 | INFO | Processed JSON message: {'message': 'Streaming data is fun.', 'author': 'Diana'}
+2025-09-07 12:21:17 | INFO | Message received from author: Diana
+2025-09-07 12:21:17 | INFO | Updated author counts: {'Alice': 10, 'Charlie': 5, 'Diana': 12, 'Eve': 5, 'Bob': 6}
+2025-09-07 12:21:18 | INFO | Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-09-07 12:21:18 | INFO | Processed JSON message: {'message': 'Have a great day!', 'author': 'Diana'}
+2025-09-07 12:21:18 | INFO | Message received from author: Diana
+2025-09-07 12:21:18 | INFO | Updated author counts: {'Alice': 10, 'Charlie': 5, 'Diana': 13, 'Eve': 5, 'Bob': 6}
+2025-09-07 12:21:19 | INFO | Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Alice'}
+2025-09-07 12:21:19 | INFO | Processed JSON message: {'message': 'I love Python!', 'author': 'Alice'}
+2025-09-07 12:21:19 | INFO | Message received from author: Alice
+2025-09-07 12:21:19 | INFO | Updated author counts: {'Alice': 11, 'Charlie': 5, 'Diana': 13, 'Eve': 5, 'Bob': 6}
+2025-09-07 12:21:20 | INFO | Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Charlie'}
+2025-09-07 12:21:20 | INFO | Processed JSON message: {'message': 'Streaming data is fun.', 'author': 'Charlie'}
+2025-09-07 12:21:20 | INFO | Message received from author: Charlie
+2025-09-07 12:21:20 | INFO | Updated author counts: {'Alice': 11, 'Charlie': 6, 'Diana': 13, 'Eve': 5, 'Bob': 6}
+2025-09-07 12:21:21 | INFO | Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-09-07 12:21:21 | INFO | Processed JSON message: {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-09-07 12:21:21 | INFO | Message received from author: Alice
+2025-09-07 12:21:21 | INFO | Updated author counts: {'Alice': 12, 'Charlie': 6, 'Diana': 13, 'Eve': 5, 'Bob': 6}
+2025-09-07 12:21:22 | INFO | Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Diana'}
+2025-09-07 12:21:22 | INFO | Processed JSON message: {'message': 'Kafka is awesome.', 'author': 'Diana'}
+2025-09-07 12:21:22 | INFO | Message received from author: Diana
+2025-09-07 12:21:22 | INFO | Updated author counts: {'Alice': 12, 'Charlie': 6, 'Diana': 14, 'Eve': 5, 'Bob': 6}
+2025-09-07 12:21:23 | INFO | Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-09-07 12:21:23 | INFO | Processed JSON message: {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-09-07 12:21:23 | INFO | Message received from author: Alice
+2025-09-07 12:21:23 | INFO | Updated author counts: {'Alice': 13, 'Charlie': 6, 'Diana': 14, 'Eve': 5, 'Bob': 6}
+2025-09-07 12:21:24 | INFO | Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Bob'}
+2025-09-07 12:21:24 | INFO | Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Bob'}
+2025-09-07 12:21:24 | INFO | Message received from author: Bob
+2025-09-07 12:21:24 | INFO | Updated author counts: {'Alice': 13, 'Charlie': 6, 'Diana': 14, 'Eve': 5, 'Bob': 7}
+2025-09-07 12:21:25 | INFO | Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Bob'}
+2025-09-07 12:21:25 | INFO | Processed JSON message: {'message': 'This is a buzz message.', 'author': 'Bob'}
+2025-09-07 12:21:25 | INFO | Message received from author: Bob
+2025-09-07 12:21:25 | INFO | Updated author counts: {'Alice': 13, 'Charlie': 6, 'Diana': 14, 'Eve': 5, 'Bob': 8}
+2025-09-07 12:21:26 | INFO | Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Diana'}
+2025-09-07 12:21:26 | INFO | Processed JSON message: {'message': 'Streaming data is fun.', 'author': 'Diana'}
+2025-09-07 12:21:26 | INFO | Message received from author: Diana
+2025-09-07 12:21:26 | INFO | Updated author counts: {'Alice': 13, 'Charlie': 6, 'Diana': 15, 'Eve': 5, 'Bob': 8}
+2025-09-07 12:21:27 | INFO | Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Bob'}
+2025-09-07 12:21:27 | INFO | Processed JSON message: {'message': 'Have a great day!', 'author': 'Bob'}
+2025-09-07 12:21:27 | INFO | Message received from author: Bob
+2025-09-07 12:21:27 | INFO | Updated author counts: {'Alice': 13, 'Charlie': 6, 'Diana': 15, 'Eve': 5, 'Bob': 9}
+2025-09-07 12:21:28 | INFO | Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-09-07 12:21:28 | INFO | Processed JSON message: {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-09-07 12:21:28 | INFO | Message received from author: Eve
+2025-09-07 12:21:28 | INFO | Updated author counts: {'Alice': 13, 'Charlie': 6, 'Diana': 15, 'Eve': 6, 'Bob': 9}
+2025-09-07 12:21:29 | INFO | Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Bob'}
+2025-09-07 12:21:29 | INFO | Processed JSON message: {'message': 'Hello, Kafka world!', 'author': 'Bob'}
+2025-09-07 12:21:29 | INFO | Message received from author: Bob
+2025-09-07 12:21:29 | INFO | Updated author counts: {'Alice': 13, 'Charlie': 6, 'Diana': 15, 'Eve': 6, 'Bob': 10}
+2025-09-07 12:21:30 | INFO | Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Alice'}
+2025-09-07 12:21:30 | INFO | Processed JSON message: {'message': 'This is a buzz message.', 'author': 'Alice'}
+2025-09-07 12:21:30 | INFO | Message received from author: Alice
+2025-09-07 12:21:30 | INFO | Updated author counts: {'Alice': 14, 'Charlie': 6, 'Diana': 15, 'Eve': 6, 'Bob': 10}
+2025-09-07 12:21:31 | INFO | Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Eve'}
+2025-09-07 12:21:31 | INFO | Processed JSON message: {'message': 'Streaming data is fun.', 'author': 'Eve'}
+2025-09-07 12:21:31 | INFO | Message received from author: Eve
+2025-09-07 12:21:31 | INFO | Updated author counts: {'Alice': 14, 'Charlie': 6, 'Diana': 15, 'Eve': 7, 'Bob': 10}
+2025-09-07 12:21:34 | INFO | Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-09-07 12:21:34 | INFO | Processed JSON message: {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-09-07 12:21:34 | INFO | Message received from author: Alice
+2025-09-07 12:21:34 | INFO | Updated author counts: {'Alice': 15, 'Charlie': 6, 'Diana': 15, 'Eve': 7, 'Bob': 10}
+2025-09-07 12:21:35 | INFO | Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Bob'}
+2025-09-07 12:21:35 | INFO | Processed JSON message: {'message': 'JSON makes life easier.', 'author': 'Bob'}
+2025-09-07 12:21:35 | INFO | Message received from author: Bob
+2025-09-07 12:21:35 | INFO | Updated author counts: {'Alice': 15, 'Charlie': 6, 'Diana': 15, 'Eve': 7, 'Bob': 11}
+2025-09-07 12:21:36 | INFO | Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Charlie'}
+2025-09-07 12:21:36 | INFO | Processed JSON message: {'message': 'This is a buzz message.', 'author': 'Charlie'}
+2025-09-07 12:21:36 | INFO | Message received from author: Charlie
+2025-09-07 12:21:36 | INFO | Updated author counts: {'Alice': 15, 'Charlie': 7, 'Diana': 15, 'Eve': 7, 'Bob': 11}
+2025-09-07 12:21:37 | INFO | Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-09-07 12:21:38 | INFO | Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Bob'}
+2025-09-07 12:21:39 | INFO | Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-09-07 12:21:40 | INFO | Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Alice'}
+2025-09-07 12:21:41 | INFO | Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-09-07 12:21:42 | INFO | Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Alice'}
+2025-09-07 12:21:43 | INFO | Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Diana'}
+2025-09-07 12:21:44 | INFO | Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Bob'}
+2025-09-07 12:21:45 | INFO | Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-09-07 12:21:46 | INFO | Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Alice'}
+2025-09-07 12:21:47 | INFO | Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Eve'}
+2025-09-07 12:21:48 | INFO | Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Diana'}
+2025-09-07 12:21:49 | INFO | Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Charlie'}
+2025-09-07 12:21:50 | INFO | Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Charlie'}
+2025-09-07 12:21:51 | INFO | Sent message to topic 'buzzline_json': {'message': 'Streaming data is fun.', 'author': 'Alice'}
+2025-09-07 12:21:52 | INFO | Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Diana'}
+2025-09-07 12:21:53 | INFO | Sent message to topic 'buzzline_json': {'message': 'Kafka is awesome.', 'author': 'Bob'}
+2025-09-07 12:21:54 | INFO | Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Eve'}
+2025-09-07 12:21:55 | INFO | Sent message to topic 'buzzline_json': {'message': 'JSON makes life easier.', 'author': 'Charlie'}
+2025-09-07 12:21:56 | INFO | Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Charlie'}
+2025-09-07 12:21:57 | INFO | Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Charlie'}
+2025-09-07 12:21:58 | INFO | Sent message to topic 'buzzline_json': {'message': 'I love Python!', 'author': 'Diana'}
+2025-09-07 12:21:59 | WARNING | Producer interrupted by user.
+2025-09-07 12:21:59 | INFO | Kafka producer closed.
+2025-09-07 12:21:59 | INFO | END producer.
+2025-09-07 12:58:58 | INFO | Logging to file: logs/project_log.log
+2025-09-07 12:58:58 | INFO | Log sanitization enabled, personal info removed
+2025-09-07 12:58:58 | INFO | Project root: PROJECT_ROOT
+2025-09-07 12:58:58 | INFO | Data folder: PROJECT_ROOT/data
+2025-09-07 12:58:58 | INFO | Data file: PROJECT_ROOT/data/buzz.json
+2025-09-07 12:58:58 | INFO | Kafka broker address: localhost:9092
+2025-09-07 12:58:58 | INFO | Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'fyTwFSU3TlSmymUFvycPSg', 'controller_id': 1}
+2025-09-07 12:58:58 | INFO | Kafka broker address: localhost:9092
+2025-09-07 12:58:58 | INFO | Connecting to Kafka broker at localhost:9092...
+2025-09-07 12:58:58 | INFO | Kafka producer successfully created.
+2025-09-07 12:58:58 | INFO | Kafka broker address: localhost:9092
+2025-09-07 12:58:58 | INFO | Topic 'manufacturing_json_topic' created successfully.
+2025-09-07 12:58:58 | INFO | Generated JSON message: {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 12:58:59 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 12:59:01 | INFO | Generated JSON message: {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 12:59:01 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 12:59:03 | INFO | Generated JSON message: {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 12:59:03 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 12:59:05 | INFO | Generated JSON message: {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 12:59:05 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 12:59:07 | INFO | Generated JSON message: {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 12:59:07 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 12:59:09 | INFO | Generated JSON message: {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 12:59:09 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 12:59:11 | INFO | Generated JSON message: {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 12:59:11 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 12:59:13 | INFO | Generated JSON message: {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 12:59:13 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 12:59:15 | INFO | Generated JSON message: {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 12:59:15 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 12:59:17 | INFO | Generated JSON message: {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 12:59:17 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 12:59:19 | INFO | Generated JSON message: {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 12:59:19 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 12:59:21 | INFO | Generated JSON message: {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 12:59:21 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 12:59:23 | INFO | Generated JSON message: {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 12:59:23 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 12:59:25 | INFO | Generated JSON message: {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 12:59:25 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 12:59:27 | INFO | Generated JSON message: {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 12:59:27 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 12:59:29 | INFO | Generated JSON message: {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 12:59:29 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 12:59:31 | INFO | Generated JSON message: {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 12:59:31 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 12:59:33 | INFO | Generated JSON message: {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 12:59:33 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 12:59:35 | INFO | Generated JSON message: {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 12:59:35 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 12:59:37 | INFO | Generated JSON message: {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 12:59:37 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 12:59:39 | INFO | Generated JSON message: {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 12:59:39 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 12:59:41 | INFO | Generated JSON message: {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 12:59:41 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 12:59:43 | INFO | Generated JSON message: {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 12:59:43 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 12:59:45 | INFO | Generated JSON message: {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 12:59:45 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 12:59:47 | INFO | Generated JSON message: {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 12:59:47 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 12:59:49 | INFO | Generated JSON message: {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 12:59:49 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 12:59:51 | INFO | Generated JSON message: {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 12:59:51 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 12:59:53 | INFO | Generated JSON message: {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 12:59:53 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 12:59:55 | INFO | Generated JSON message: {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 12:59:55 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 12:59:57 | INFO | Generated JSON message: {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 12:59:57 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 12:59:59 | INFO | Generated JSON message: {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 12:59:59 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 13:00:01 | INFO | Generated JSON message: {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 13:00:01 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 13:00:03 | INFO | Generated JSON message: {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 13:00:03 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 13:00:05 | INFO | Generated JSON message: {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 13:00:05 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 13:00:07 | INFO | Generated JSON message: {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 13:00:07 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 13:00:09 | INFO | Generated JSON message: {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 13:00:09 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 13:00:11 | INFO | Generated JSON message: {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 13:00:11 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 13:00:13 | INFO | Generated JSON message: {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 13:00:13 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 13:00:15 | INFO | Generated JSON message: {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 13:00:15 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 13:00:17 | INFO | Generated JSON message: {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 13:00:17 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 13:00:19 | INFO | Generated JSON message: {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 13:00:19 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 13:00:21 | INFO | Generated JSON message: {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 13:00:21 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 13:00:23 | INFO | Generated JSON message: {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 13:00:23 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 13:00:25 | INFO | Generated JSON message: {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 13:00:25 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 13:00:27 | INFO | Generated JSON message: {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 13:00:27 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 13:00:27 | INFO | Logging to file: logs/project_log.log
+2025-09-07 13:00:27 | INFO | Log sanitization enabled, personal info removed
+2025-09-07 13:00:27 | INFO | Kafka broker address: localhost:9092
+2025-09-07 13:00:27 | INFO | Creating Kafka consumer. Topic='manufacturing_json_topic' and group ID='manufacturing_json_group'.
+2025-09-07 13:00:27 | INFO | Kafka consumer created successfully.
+2025-09-07 13:00:29 | INFO | Generated JSON message: {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 13:00:29 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 1}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 1, 'idle': 1}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 1, 'idle': 1, 'error': 1}
+2025-09-07 13:00:31 | WARNING | ALERT: Machine M003 reported error E101!
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 1, 'idle': 1, 'error': 1, 'maintenance': 1}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 2, 'idle': 1, 'error': 1, 'maintenance': 1}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 2, 'idle': 2, 'error': 1, 'maintenance': 1}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 2, 'idle': 2, 'error': 2, 'maintenance': 1}
+2025-09-07 13:00:31 | WARNING | ALERT: Machine M003 reported error E101!
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M001', 'status': 'maintenance', 'temperature': 70.0, 'timestamp': '2025-09-07T08:03:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 2, 'idle': 2, 'error': 2, 'maintenance': 2}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 3, 'idle': 2, 'error': 2, 'maintenance': 2}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M002', 'status': 'idle', 'temperature': 68.4, 'timestamp': '2025-09-07T08:01:00'}
+2025-09-07 13:00:31 | INFO | Updated status counts: {'running': 3, 'idle': 3, 'error': 2, 'maintenance': 2}
+2025-09-07 13:00:31 | INFO | Received message: {'machine_id': 'M003', 'status': 'error', 'temperature': 102.5, 'timestamp': '2025-09-07T08:02:00', 'error_code': 'E101'}
