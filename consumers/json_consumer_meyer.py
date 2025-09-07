@@ -40,49 +40,25 @@ def process_message(message: str):
 #####################################
 
 
-def main() -> None:
-    """
-    Main entry point for the consumer.
+def main():
+    topic = "manufacturing_json_topic"
+    group_id = "manufacturing_json_group"
 
-    - Reads the Kafka topic name and consumer group ID from environment variables.
-    - Creates a Kafka consumer using the `create_kafka_consumer` utility.
-    - Performs analytics on messages from the Kafka topic.
-    """
-    logger.info("START consumer.")
-
-    # fetch .env content
-    topic = get_kafka_topic()
-    group_id = get_kafka_consumer_group_id()
-    logger.info(f"Consumer: Topic '{topic}' and group '{group_id}'...")
-
-    # Create the Kafka consumer using the helpful utility function.
     consumer = create_kafka_consumer(topic, group_id)
 
-    # Poll and process messages
-    logger.info(f"Polling messages from topic '{topic}'...")
     try:
         while True:
-            # poll returns a dict: {TopicPartition: [ConsumerRecord, ...], ...}
-            records = consumer.poll(timeout_ms=1000, max_records=100)
+            records = consumer.poll(timeout_ms=1000)
             if not records:
                 continue
-
-            for _tp, batch in records.items():
+            for _, batch in records.items():
                 for msg in batch:
-                    # value_deserializer in utils_consumer already decoded this to str
-                    message_str: str = msg.value
-                    logger.debug(f"Received message at offset {msg.offset}: {message_str}")
-                    process_message(message_str)
+                    process_message(msg.value)
     except KeyboardInterrupt:
         logger.warning("Consumer interrupted by user.")
-    except Exception as e:
-        logger.error(f"Error while consuming messages: {e}")
     finally:
         consumer.close()
-        
-    logger.info(f"Kafka consumer for topic '{topic}' closed.")
-
-    logger.info(f"END consumer for topic '{topic}' and group '{group_id}'.")
+        logger.info("Kafka consumer closed.")
 
 
 #####################################
