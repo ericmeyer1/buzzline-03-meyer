@@ -13,75 +13,21 @@ import os
 # Track machine statuses
 machine_status_counts = defaultdict(int)
 
-#####################################
-# Load Environment Variables
-#####################################
 
-load_dotenv()
-
-#####################################
-# Getter Functions for .env Variables
-#####################################
-
-
-def get_kafka_topic() -> str:
-    """Fetch Kafka topic from environment or use default."""
-    topic = os.getenv("BUZZ_TOPIC", "unknown_topic")
-    logger.info(f"Kafka topic: {topic}")
-    return topic
-
-
-def get_kafka_consumer_group_id() -> str:
-    """Fetch Kafka consumer group id from environment or use default."""
-    group_id: str = os.getenv("BUZZ_CONSUMER_GROUP_ID", "default_group")
-    logger.info(f"Kafka consumer group id: {group_id}")
-    return group_id
-
-
-#####################################
-# Set up Data Store to hold author counts
-#####################################
-
-# Initialize a dictionary to store author counts
-# The defaultdict type initializes counts to 0
-# pass in the int function as the default_factory
-# to ensure counts are integers
-# {author: count} author is the key and count is the value
-author_counts: defaultdict[str, int] = defaultdict(int)
-
-
-#####################################
-# Function to process a single message
-# #####################################
-
-
-def process_message(message: str) -> None:
-    """
-    Process a single JSON message from Kafka.
-
-    Args:
-        message (str): The JSON message as a string.
-    """
+def process_message(message: str):
+    """Process a single JSON message from Kafka."""
     try:
-        # Log the raw message for debugging
-        logger.debug(f"Raw message: {message}")
+        message_dict = json.loads(message)
+        logger.info(f"Received message: {message_dict}")
 
-        # Parse the JSON string into a Python dictionary
-        from typing import Any
-        message_dict: dict[str, Any] = json.loads(message)
+        # Track machine status
+        status = message_dict.get("status", "unknown")
+        machine_status_counts[status] += 1
+        logger.info(f"Updated status counts: {dict(machine_status_counts)}")
 
-        # Ensure the processed JSON is logged for debugging
-        logger.info(f"Processed JSON message: {message_dict}")
-
-        # Extract the 'author' field from the Python dictionary
-        author = message_dict.get("author", "unknown")
-        logger.info(f"Message received from author: {author}")
-
-        # Increment the count for the author
-        author_counts[author] += 1
-
-        # Log the updated counts
-        logger.info(f"Updated author counts: {dict(author_counts)}")
+        # Alert if machine has error
+        if status.lower() == "error":
+            logger.warning(f"ALERT: Machine {message_dict.get('machine_id')} reported error {message_dict.get('error_code')}!")
 
     except json.JSONDecodeError:
         logger.error(f"Invalid JSON message: {message}")
