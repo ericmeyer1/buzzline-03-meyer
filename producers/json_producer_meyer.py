@@ -1,14 +1,14 @@
 """
-json_producer_case.py
+json_producer_meyer.py
 
-Stream JSON data to a Kafka topic.
+Stream JSON sensor data from manufacturing equipment (e.g., extrusion line)
+to a Kafka topic.
 
-Example JSON message
-{"message": "I love Python!", "author": "Eve"}
+Example JSON message:
+{"sensor": "Extruder1", "temperature": 210.5, "pressure": 45.2}
 
-Example serialized to Kafka message
-"{\"message\": \"I love Python!\", \"author\": \"Eve\"}"
-
+Example serialized to Kafka message:
+"{\"sensor\": \"Extruder1\", \"temperature\": 210.5, \"pressure\": 45.2}"
 """
 
 #####################################
