@@ -22,3 +22,118 @@
 2025-09-07 13:00:51 | INFO | Sent message to topic 'manufacturing_json_topic': {'machine_id': 'M001', 'status': 'running', 'temperature': 75.2, 'timestamp': '2025-09-07T08:00:00'}
 2025-09-07 13:00:52 | WARNING | Producer interrupted by user.
 2025-09-07 13:00:52 | INFO | Kafka producer closed.
+2025-09-07 13:07:53 | INFO | Logging to file: logs/project_log.log
+2025-09-07 13:07:53 | INFO | Log sanitization enabled, personal info removed
+2025-09-07 13:07:53 | INFO | Kafka broker address: localhost:9092
+2025-09-07 13:07:53 | INFO | Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'fyTwFSU3TlSmymUFvycPSg', 'controller_id': 1}
+2025-09-07 13:07:53 | INFO | Kafka broker address: localhost:9092
+2025-09-07 13:07:53 | INFO | Connecting to Kafka broker at localhost:9092...
+2025-09-07 13:07:53 | INFO | Kafka producer successfully created.
+2025-09-07 13:07:53 | INFO | Kafka broker address: localhost:9092
+2025-09-07 13:07:54 | INFO | Topic 'manufacturing_csv_topic' created successfully.
+2025-09-07 13:07:54 | INFO | Generated CSV message: {'timestamp': '2025-09-07 08:00:00', 'machine_id': 'M001', 'temperature': 75.2}
+2025-09-07 13:07:54 | INFO | Sent message to topic 'manufacturing_csv_topic': {'timestamp': '2025-09-07 08:00:00', 'machine_id': 'M001', 'temperature': 75.2}
+2025-09-07 13:07:56 | INFO | Generated CSV message: {'timestamp': '2025-09-07 08:01:00', 'machine_id': 'M001', 'temperature': 75.5}
+2025-09-07 13:07:56 | INFO | Sent message to topic 'manufacturing_csv_topic': {'timestamp': '2025-09-07 08:01:00', 'machine_id': 'M001', 'temperature': 75.5}
+2025-09-07 13:07:58 | INFO | Generated CSV message: {'timestamp': '2025-09-07 08:02:00', 'machine_id': 'M001', 'temperature': 75.8}
+2025-09-07 13:07:58 | INFO | Sent message to topic 'manufacturing_csv_topic': {'timestamp': '2025-09-07 08:02:00', 'machine_id': 'M001', 'temperature': 75.8}
+2025-09-07 13:08:00 | INFO | Generated CSV message: {'timestamp': '2025-09-07 08:03:00', 'machine_id': 'M001', 'temperature': 76.0}
+2025-09-07 13:08:00 | INFO | Sent message to topic 'manufacturing_csv_topic': {'timestamp': '2025-09-07 08:03:00', 'machine_id': 'M001', 'temperature': 76.0}
+2025-09-07 13:08:02 | INFO | Generated CSV message: {'timestamp': '2025-09-07 08:00:00', 'machine_id': 'M001', 'temperature': 75.2}
+2025-09-07 13:08:02 | INFO | Sent message to topic 'manufacturing_csv_topic': {'timestamp': '2025-09-07 08:00:00', 'machine_id': 'M001', 'temperature': 75.2}
+2025-09-07 13:08:04 | INFO | Generated CSV message: {'timestamp': '2025-09-07 08:01:00', 'machine_id': 'M001', 'temperature': 75.5}
+2025-09-07 13:08:04 | INFO | Sent message to topic 'manufacturing_csv_topic': {'timestamp': '2025-09-07 08:01:00', 'machine_id': 'M001', 'temperature': 75.5}
+2025-09-07 13:08:06 | INFO | Generated CSV message: {'timestamp': '2025-09-07 08:02:00', 'machine_id': 'M001', 'temperature': 75.8}
+2025-09-07 13:08:06 | INFO | Sent message to topic 'manufacturing_csv_topic': {'timestamp': '2025-09-07 08:02:00', 'machine_id': 'M001', 'temperature': 75.8}
+2025-09-07 13:08:08 | INFO | Generated CSV message: {'timestamp': '2025-09-07 08:03:00', 'machine_id': 'M001', 'temperature': 76.0}
+2025-09-07 13:08:08 | INFO | Sent message to topic 'manufacturing_csv_topic': {'timestamp': '2025-09-07 08:03:00', 'machine_id': 'M001', 'temperature': 76.0}
+2025-09-07 13:08:10 | INFO | Generated CSV message: {'timestamp': '2025-09-07 08:00:00', 'machine_id': 'M001', 'temperature': 75.2}
+2025-09-07 13:08:10 | INFO | Sent message to topic 'manufacturing_csv_topic': {'timestamp': '2025-09-07 08:00:00', 'machine_id': 'M001', 'temperature': 75.2}
+2025-09-07 13:08:12 | INFO | Generated CSV message: {'timestamp': '2025-09-07 08:01:00', 'machine_id': 'M001', 'temperature': 75.5}
+2025-09-07 13:08:12 | INFO | Sent message to topic 'manufacturing_csv_topic': {'timestamp': '2025-09-07 08:01:00', 'machine_id': 'M001', 'temperature': 75.5}
+2025-09-07 13:08:14 | INFO | Generated CSV message: {'timestamp': '2025-09-07 08:02:00', 'machine_id': 'M001', 'temperature': 75.8}
+2025-09-07 13:08:14 | INFO | Sent message to topic 'manufacturing_csv_topic': {'timestamp': '2025-09-07 08:02:00', 'machine_id': 'M001', 'temperature': 75.8}
+2025-09-07 13:08:16 | INFO | Generated CSV message: {'timestamp': '2025-09-07 08:03:00', 'machine_id': 'M001', 'temperature': 76.0}
+2025-09-07 13:08:16 | INFO | Sent message to topic 'manufacturing_csv_topic': {'timestamp': '2025-09-07 08:03:00', 'machine_id': 'M001', 'temperature': 76.0}
+2025-09-07 13:08:18 | INFO | Generated CSV message: {'timestamp': '2025-09-07 08:00:00', 'machine_id': 'M001', 'temperature': 75.2}
+2025-09-07 13:08:18 | INFO | Sent message to topic 'manufacturing_csv_topic': {'timestamp': '2025-09-07 08:00:00', 'machine_id': 'M001', 'temperature': 75.2}
+2025-09-07 13:08:20 | INFO | Generated CSV message: {'timestamp': '2025-09-07 08:01:00', 'machine_id': 'M001', 'temperature': 75.5}
+2025-09-07 13:08:20 | INFO | Sent message to topic 'manufacturing_csv_topic': {'timestamp': '2025-09-07 08:01:00', 'machine_id': 'M001', 'temperature': 75.5}
+2025-09-07 13:08:22 | INFO | Generated CSV message: {'timestamp': '2025-09-07 08:02:00', 'machine_id': 'M001', 'temperature': 75.8}
+2025-09-07 13:08:22 | INFO | Sent message to topic 'manufacturing_csv_topic': {'timestamp': '2025-09-07 08:02:00', 'machine_id': 'M001', 'temperature': 75.8}
+2025-09-07 13:08:24 | INFO | Generated CSV message: {'timestamp': '2025-09-07 08:03:00', 'machine_id': 'M001', 'temperature': 76.0}
+2025-09-07 13:08:24 | INFO | Sent message to topic 'manufacturing_csv_topic': {'timestamp': '2025-09-07 08:03:00', 'machine_id': 'M001', 'temperature': 76.0}
+2025-09-07 13:08:26 | INFO | Generated CSV message: {'timestamp': '2025-09-07 08:00:00', 'machine_id': 'M001', 'temperature': 75.2}
+2025-09-07 13:08:26 | INFO | Sent message to topic 'manufacturing_csv_topic': {'timestamp': '2025-09-07 08:00:00', 'machine_id': 'M001', 'temperature': 75.2}
+2025-09-07 13:08:28 | INFO | Generated CSV message: {'timestamp': '2025-09-07 08:01:00', 'machine_id': 'M001', 'temperature': 75.5}
+2025-09-07 13:08:28 | INFO | Sent message to topic 'manufacturing_csv_topic': {'timestamp': '2025-09-07 08:01:00', 'machine_id': 'M001', 'temperature': 75.5}
+2025-09-07 13:08:28 | INFO | Logging to file: logs/project_log.log
+2025-09-07 13:08:28 | INFO | Log sanitization enabled, personal info removed
+2025-09-07 13:08:28 | INFO | Kafka broker address: localhost:9092
+2025-09-07 13:08:28 | INFO | Creating Kafka consumer. Topic='manufacturing_csv_topic' and group ID='manufacturing_csv_group'.
+2025-09-07 13:08:29 | INFO | Kafka consumer created successfully.
+2025-09-07 13:08:30 | INFO | Generated CSV message: {'timestamp': '2025-09-07 08:02:00', 'machine_id': 'M001', 'temperature': 75.8}
+2025-09-07 13:08:30 | INFO | Sent message to topic 'manufacturing_csv_topic': {'timestamp': '2025-09-07 08:02:00', 'machine_id': 'M001', 'temperature': 75.8}
+2025-09-07 13:08:32 | INFO | Generated CSV message: {'timestamp': '2025-09-07 08:03:00', 'machine_id': 'M001', 'temperature': 76.0}
+2025-09-07 13:08:32 | INFO | Sent message to topic 'manufacturing_csv_topic': {'timestamp': '2025-09-07 08:03:00', 'machine_id': 'M001', 'temperature': 76.0}
+2025-09-07 13:08:32 | INFO | Received sensor reading: {'timestamp': '2025-09-07 08:00:00', 'machine_id': 'M001', 'temperature': 75.2}
+2025-09-07 13:08:32 | INFO | Received sensor reading: {'timestamp': '2025-09-07 08:01:00', 'machine_id': 'M001', 'temperature': 75.5}
+2025-09-07 13:08:32 | INFO | Received sensor reading: {'timestamp': '2025-09-07 08:02:00', 'machine_id': 'M001', 'temperature': 75.8}
+2025-09-07 13:08:32 | INFO | Received sensor reading: {'timestamp': '2025-09-07 08:03:00', 'machine_id': 'M001', 'temperature': 76.0}
+2025-09-07 13:08:32 | INFO | Received sensor reading: {'timestamp': '2025-09-07 08:00:00', 'machine_id': 'M001', 'temperature': 75.2}
+2025-09-07 13:08:32 | INFO | Received sensor reading: {'timestamp': '2025-09-07 08:01:00', 'machine_id': 'M001', 'temperature': 75.5}
+2025-09-07 13:08:32 | INFO | Received sensor reading: {'timestamp': '2025-09-07 08:02:00', 'machine_id': 'M001', 'temperature': 75.8}
+2025-09-07 13:08:32 | INFO | Received sensor reading: {'timestamp': '2025-09-07 08:03:00', 'machine_id': 'M001', 'temperature': 76.0}
+2025-09-07 13:08:32 | INFO | Received sensor reading: {'timestamp': '2025-09-07 08:00:00', 'machine_id': 'M001', 'temperature': 75.2}
+2025-09-07 13:08:32 | INFO | Received sensor reading: {'timestamp': '2025-09-07 08:01:00', 'machine_id': 'M001', 'temperature': 75.5}
+2025-09-07 13:08:32 | INFO | Received sensor reading: {'timestamp': '2025-09-07 08:02:00', 'machine_id': 'M001', 'temperature': 75.8}
+2025-09-07 13:08:32 | INFO | Received sensor reading: {'timestamp': '2025-09-07 08:03:00', 'machine_id': 'M001', 'temperature': 76.0}
+2025-09-07 13:08:32 | INFO | Received sensor reading: {'timestamp': '2025-09-07 08:00:00', 'machine_id': 'M001', 'temperature': 75.2}
+2025-09-07 13:08:32 | INFO | Received sensor reading: {'timestamp': '2025-09-07 08:01:00', 'machine_id': 'M001', 'temperature': 75.5}
+2025-09-07 13:08:32 | INFO | Received sensor reading: {'timestamp': '2025-09-07 08:02:00', 'machine_id': 'M001', 'temperature': 75.8}
+2025-09-07 13:08:32 | INFO | Received sensor reading: {'timestamp': '2025-09-07 08:03:00', 'machine_id': 'M001', 'temperature': 76.0}
+2025-09-07 13:08:32 | INFO | Received sensor reading: {'timestamp': '2025-09-07 08:00:00', 'machine_id': 'M001', 'temperature': 75.2}
+2025-09-07 13:08:32 | INFO | Received sensor reading: {'timestamp': '2025-09-07 08:01:00', 'machine_id': 'M001', 'temperature': 75.5}
+2025-09-07 13:08:32 | INFO | Received sensor reading: {'timestamp': '2025-09-07 08:02:00', 'machine_id': 'M001', 'temperature': 75.8}
+2025-09-07 13:08:32 | INFO | Received sensor reading: {'timestamp': '2025-09-07 08:03:00', 'machine_id': 'M001', 'temperature': 76.0}
+2025-09-07 13:08:34 | INFO | Generated CSV message: {'timestamp': '2025-09-07 08:00:00', 'machine_id': 'M001', 'temperature': 75.2}
+2025-09-07 13:08:34 | INFO | Sent message to topic 'manufacturing_csv_topic': {'timestamp': '2025-09-07 08:00:00', 'machine_id': 'M001', 'temperature': 75.2}
+2025-09-07 13:08:34 | INFO | Received sensor reading: {'timestamp': '2025-09-07 08:00:00', 'machine_id': 'M001', 'temperature': 75.2}
+2025-09-07 13:08:36 | INFO | Generated CSV message: {'timestamp': '2025-09-07 08:01:00', 'machine_id': 'M001', 'temperature': 75.5}
+2025-09-07 13:08:36 | INFO | Sent message to topic 'manufacturing_csv_topic': {'timestamp': '2025-09-07 08:01:00', 'machine_id': 'M001', 'temperature': 75.5}
+2025-09-07 13:08:36 | INFO | Received sensor reading: {'timestamp': '2025-09-07 08:01:00', 'machine_id': 'M001', 'temperature': 75.5}
+2025-09-07 13:08:38 | INFO | Generated CSV message: {'timestamp': '2025-09-07 08:02:00', 'machine_id': 'M001', 'temperature': 75.8}
+2025-09-07 13:08:38 | INFO | Sent message to topic 'manufacturing_csv_topic': {'timestamp': '2025-09-07 08:02:00', 'machine_id': 'M001', 'temperature': 75.8}
+2025-09-07 13:08:38 | INFO | Received sensor reading: {'timestamp': '2025-09-07 08:02:00', 'machine_id': 'M001', 'temperature': 75.8}
+2025-09-07 13:08:40 | INFO | Generated CSV message: {'timestamp': '2025-09-07 08:03:00', 'machine_id': 'M001', 'temperature': 76.0}
+2025-09-07 13:08:40 | INFO | Sent message to topic 'manufacturing_csv_topic': {'timestamp': '2025-09-07 08:03:00', 'machine_id': 'M001', 'temperature': 76.0}
+2025-09-07 13:08:40 | INFO | Received sensor reading: {'timestamp': '2025-09-07 08:03:00', 'machine_id': 'M001', 'temperature': 76.0}
+2025-09-07 13:08:42 | INFO | Generated CSV message: {'timestamp': '2025-09-07 08:00:00', 'machine_id': 'M001', 'temperature': 75.2}
+2025-09-07 13:08:42 | INFO | Received sensor reading: {'timestamp': '2025-09-07 08:00:00', 'machine_id': 'M001', 'temperature': 75.2}
+2025-09-07 13:08:42 | INFO | Sent message to topic 'manufacturing_csv_topic': {'timestamp': '2025-09-07 08:00:00', 'machine_id': 'M001', 'temperature': 75.2}
+2025-09-07 13:08:44 | INFO | Generated CSV message: {'timestamp': '2025-09-07 08:01:00', 'machine_id': 'M001', 'temperature': 75.5}
+2025-09-07 13:08:44 | INFO | Sent message to topic 'manufacturing_csv_topic': {'timestamp': '2025-09-07 08:01:00', 'machine_id': 'M001', 'temperature': 75.5}
+2025-09-07 13:08:44 | INFO | Received sensor reading: {'timestamp': '2025-09-07 08:01:00', 'machine_id': 'M001', 'temperature': 75.5}
+2025-09-07 13:08:46 | INFO | Generated CSV message: {'timestamp': '2025-09-07 08:02:00', 'machine_id': 'M001', 'temperature': 75.8}
+2025-09-07 13:08:46 | INFO | Sent message to topic 'manufacturing_csv_topic': {'timestamp': '2025-09-07 08:02:00', 'machine_id': 'M001', 'temperature': 75.8}
+2025-09-07 13:08:46 | INFO | Received sensor reading: {'timestamp': '2025-09-07 08:02:00', 'machine_id': 'M001', 'temperature': 75.8}
+2025-09-07 13:08:48 | INFO | Generated CSV message: {'timestamp': '2025-09-07 08:03:00', 'machine_id': 'M001', 'temperature': 76.0}
+2025-09-07 13:08:48 | INFO | Sent message to topic 'manufacturing_csv_topic': {'timestamp': '2025-09-07 08:03:00', 'machine_id': 'M001', 'temperature': 76.0}
+2025-09-07 13:08:48 | INFO | Received sensor reading: {'timestamp': '2025-09-07 08:03:00', 'machine_id': 'M001', 'temperature': 76.0}
+2025-09-07 13:08:50 | INFO | Generated CSV message: {'timestamp': '2025-09-07 08:00:00', 'machine_id': 'M001', 'temperature': 75.2}
+2025-09-07 13:08:50 | INFO | Sent message to topic 'manufacturing_csv_topic': {'timestamp': '2025-09-07 08:00:00', 'machine_id': 'M001', 'temperature': 75.2}
+2025-09-07 13:08:50 | INFO | Received sensor reading: {'timestamp': '2025-09-07 08:00:00', 'machine_id': 'M001', 'temperature': 75.2}
+2025-09-07 13:08:52 | INFO | Generated CSV message: {'timestamp': '2025-09-07 08:01:00', 'machine_id': 'M001', 'temperature': 75.5}
+2025-09-07 13:08:52 | INFO | Sent message to topic 'manufacturing_csv_topic': {'timestamp': '2025-09-07 08:01:00', 'machine_id': 'M001', 'temperature': 75.5}
+2025-09-07 13:08:52 | INFO | Received sensor reading: {'timestamp': '2025-09-07 08:01:00', 'machine_id': 'M001', 'temperature': 75.5}
+2025-09-07 13:08:54 | INFO | Generated CSV message: {'timestamp': '2025-09-07 08:02:00', 'machine_id': 'M001', 'temperature': 75.8}
+2025-09-07 13:08:54 | INFO | Sent message to topic 'manufacturing_csv_topic': {'timestamp': '2025-09-07 08:02:00', 'machine_id': 'M001', 'temperature': 75.8}
+2025-09-07 13:08:54 | INFO | Received sensor reading: {'timestamp': '2025-09-07 08:02:00', 'machine_id': 'M001', 'temperature': 75.8}
+2025-09-07 13:08:55 | WARNING | CSV Consumer interrupted by user.
+2025-09-07 13:08:55 | INFO | Kafka CSV consumer closed.
+2025-09-07 13:08:56 | INFO | Generated CSV message: {'timestamp': '2025-09-07 08:03:00', 'machine_id': 'M001', 'temperature': 76.0}
+2025-09-07 13:08:56 | INFO | Sent message to topic 'manufacturing_csv_topic': {'timestamp': '2025-09-07 08:03:00', 'machine_id': 'M001', 'temperature': 76.0}
+2025-09-07 13:08:58 | INFO | Generated CSV message: {'timestamp': '2025-09-07 08:00:00', 'machine_id': 'M001', 'temperature': 75.2}
+2025-09-07 13:08:58 | INFO | Sent message to topic 'manufacturing_csv_topic': {'timestamp': '2025-09-07 08:00:00', 'machine_id': 'M001', 'temperature': 75.2}
+2025-09-07 13:08:58 | WARNING | CSV Producer interrupted by user.
+2025-09-07 13:08:58 | INFO | Kafka CSV producer closed.
