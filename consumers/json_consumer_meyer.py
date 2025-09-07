@@ -4,21 +4,14 @@ json_consumer_meyer.py
 Custom Kafka JSON consumer for manufacturing machine status alerts.
 """
 
-#####################################
-# Import Modules
-#####################################
-
-# Import packages from Python Standard Library
-import os
-import json  # handle JSON parsing
-from collections import defaultdict  # data structure for counting author occurrences
-
-# Import external packages
-from dotenv import load_dotenv
-
-# Import functions from local modules
+import json
+from collections import defaultdict
 from utils.utils_consumer import create_kafka_consumer
 from utils.utils_logger import logger
+import os
+
+# Track machine statuses
+machine_status_counts = defaultdict(int)
 
 #####################################
 # Load Environment Variables
