@@ -81,41 +81,21 @@ logger.info(f"Data file: {DATA_FILE}")
 #####################################
 
 
+# Hardcoded JSON messages simulating manufacturing machine data
+SAMPLE_MESSAGES = [
+    {"machine_id": "M001", "status": "running", "temperature": 75.2, "timestamp": "2025-09-07T08:00:00"},
+    {"machine_id": "M002", "status": "idle", "temperature": 68.4, "timestamp": "2025-09-07T08:01:00"},
+    {"machine_id": "M003", "status": "error", "temperature": 102.5, "timestamp": "2025-09-07T08:02:00", "error_code": "E101"},
+    {"machine_id": "M001", "status": "maintenance", "temperature": 70.0, "timestamp": "2025-09-07T08:03:00"},
+]
 
-
-def generate_messages(file_path: pathlib.Path) -> Generator[Dict[str, Any], None, None]:
-    """
-    Read from a JSON file and yield them one by one, continuously.
-
-    Args:
-        file_path (pathlib.Path): Path to the JSON file.
-
-    Yields:
-        dict: A dictionary containing the JSON data.
-    """
+def generate_messages():
+    """Yield sample JSON messages for Kafka streaming."""
     while True:
-        try:
-            logger.info(f"Opening data file in read mode: {DATA_FILE}")
-            with open(DATA_FILE, "r") as json_file:
-                logger.info(f"Reading data from file: {DATA_FILE}")
-
-                # Load the JSON file as a list of dictionaries
-                json_data: list[Dict[str, Any]] = json.load(json_file)
-
-                # Iterate over the entries in the JSON file
-                for buzz_entry in json_data:
-                    logger.debug(f"Generated JSON: {buzz_entry}")
-                    yield buzz_entry
-        
-        except FileNotFoundError:
-            logger.error(f"File not found: {file_path}. Exiting.")
-            sys.exit(1)
-        except json.JSONDecodeError as e:
-            logger.error(f"Invalid JSON format in file: {file_path}. Error: {e}")
-            sys.exit(2)
-        except Exception as e:
-            logger.error(f"Unexpected error in message generation: {e}")
-            sys.exit(3)
+        for msg in SAMPLE_MESSAGES:
+            logger.info(f"Generated JSON message: {msg}")
+            yield msg
+            time.sleep(2)  # simulate delay between messages
 
 
 #####################################
