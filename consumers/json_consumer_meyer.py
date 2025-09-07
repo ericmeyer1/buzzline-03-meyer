@@ -1,16 +1,7 @@
 """
-json_consumer_case.py
+json_consumer_meyer.py
 
-Consume json messages from a Kafka topic and process them.
-
-JSON is a set of key:value pairs. 
-
-Example serialized Kafka message
-"{\"message\": \"I love Python!\", \"author\": \"Eve\"}"
-
-Example JSON message (after deserialization) to be analyzed
-{"message": "I love Python!", "author": "Eve"}
-
+Custom Kafka JSON consumer for manufacturing machine status alerts.
 """
 
 #####################################
