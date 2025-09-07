@@ -1,256 +1,178 @@
-# buzzline-03-case
+# buzzline-03-meyer: Manufacturing Streaming Pipelines
 
-Streaming data does not have to be simple text.
-Many of us are familiar with streaming video content and audio (e.g. music) files.
+Streaming data does not have to be simple text. Many of us are familiar with streaming video content and audio (e.g., music) files.
 
-Streaming data can be structured (e.g. csv files) or
-semi-structured (e.g. json data).
+Streaming data can be **structured** (CSV) or **semi-structured** (JSON). This project demonstrates both types using custom Kafka producers and consumers focused on **manufacturing data**. Each type uses its own Kafka topic.
 
-We'll work with two different types of data, and so we'll use two different Kafka topic names.
-See [.env](.env).
+See [.env](.env) for topic names and environment variables.
+
+---
 
 ## First, Use Tools from Module 1 and 2
 
-Before starting, ensure you have completed the setup tasks in <https://github.com/denisecase/buzzline-01-case> and <https://github.com/denisecase/buzzline-02-case> first.
+Before starting, ensure you have completed the setup tasks in:
+
+- [buzzline-01-case](https://github.com/denisecase/buzzline-01-case)
+- [buzzline-02-case](https://github.com/denisecase/buzzline-02-case)
+
 **Python 3.11 is required.**
+
+---
 
 ## Second, Copy This Example Project & Rename
 
-1. Once the tools are installed, copy/fork this project into your GitHub account
-   and create your own version of this project to run and experiment with.
-2. Name it `buzzline-03-yourname` where yourname is something unique to you.
-
-Additional information about our standard professional Python project workflow is available at
-<https://github.com/denisecase/pro-analytics-01>.
-
-Use your README.md to record your workflow and commands.
+1. Fork or copy this project into your GitHub account.
+2. Create a unique version of the project to run and experiment with.
+3. Name it `buzzline-03-meyer`
 
 ---
 
-## Task 0. If Windows, Start WSL
+## Task 0: Start WSL (Windows Only)
 
-- Be sure you have completed the installation of WSL as shown in [https://github.com/denisecase/pro-analytics-01/blob/main/01-machine-setup/03c-windows-install-python-git-vscode.md](https://github.com/denisecase/pro-analytics-01/blob/main/01-machine-setup/03c-windows-install-python-git-vscode.md).
+If using Windows, ensure WSL is installed. Open a **PowerShell terminal** in VS Code and run:
 
-- We can keep working in **Windows VS Code** for editing, Git, and GitHub.
-- When you need to run Kafka or Python commands, just open a **WSL terminal** from VS Code.
-
-Launch WSL. Open a PowerShell terminal in VS Code. Run the following command:
-
-```powershell
+```powershell```
 wsl
-```
 
-You should now be in a Linux shell (prompt shows something like `username@DESKTOP:.../repo-name$`).
-
-Do **all** steps related to starting Kafka in this WSL window. 
+You are now in a Linux shell. All Kafka commands should run in this terminal.
 
 ---
 
-## Task 1. Start Kafka (using WSL if Windows)
+## Task 1: Start Kafka
 
-In P2, you downloaded, installed, configured a local Kafka service.
-Before starting, run a short prep script to ensure Kafka has a persistent data directory and meta.properties set up. This step works on WSL, macOS, and Linux - be sure you have the $ prompt and you are in the root project folder.
+Prepare and start Kafka:
 
-1. Make sure the script is executable.
-2. Run the shell script to set up Kafka.
-3. Cd (change directory) to the kafka directory.
-4. Start the Kafka server in the foreground.
-5. Keep this terminal open - Kafka will run here
-6. Watch for "started (kafka.server.KafkaServer)" message
-
-```bash
 chmod +x scripts/prepare_kafka.sh
 scripts/prepare_kafka.sh
 cd ~/kafka
 bin/kafka-server-start.sh config/kraft/server.properties
-```
 
-**Keep this terminal open!** Kafka is running and needs to stay active.
-
-For detailed instructions, see [SETUP_KAFKA](https://github.com/denisecase/buzzline-02-case/blob/main/SETUP_KAFKA.md) from Project 2. 
+Keep this terminal open as you need Kafka running.
 
 ---
 
-## Task 2. Manage Local Project Virtual Environment
+## Task 2: Manager local python environment
 
-Open your project in VS Code and use the commands for your operating system to:
-
-1. Create a Python virtual environment
-2. Activate the virtual environment
-3. Upgrade pip
-4. Install from requirements.txt
-
-### Windows
-
-Open a new PowerShell terminal in VS Code (Terminal / New Terminal / PowerShell).
-
-```powershell
+Windows
 py -3.11 -m venv .venv
 .venv\Scripts\Activate.ps1
 py -m pip install --upgrade pip wheel setuptools
 py -m pip install --upgrade -r requirements.txt
-```
 
-If you get execution policy error, run this first:
-`Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
 
-### Mac / Linux
+If you get an execution policy error, run:
 
-Open a new terminal in VS Code (Terminal / New Terminal)
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
-```bash
+Mac / Linux
 python3 -m venv .venv
 source .venv/bin/activate
 python3 -m pip install --upgrade pip
 python3 -m pip install --upgrade -r requirements.txt
-```
 
 ---
 
-## Task 3. Start a Kafka JSON Producer
+## Task 3: Custom JSON producer
 
-This producer generates streaming JSON data for our topic.
+he json_producer_meyer.py producer streams manufacturing machine statuses as JSON messages.
 
-In VS Code, open a terminal.
-Use the commands below to activate .venv (if not active), and start the producer.
+Example JSON messages:
+
+{"machine_id": "M001", "status": "running", "temperature": 75.2, "timestamp": "2025-09-07T08:00:00"}
+{"machine_id": "M002", "status": "idle", "temperature": 70.0, "timestamp": "2025-09-07T08:01:00"}
+{"machine_id": "M003", "status": "error", "temperature": 102.5, "timestamp": "2025-09-07T08:02:00", "error_code": "E101"}
+{"machine_id": "M004", "status": "maintenance", "temperature": 68.5, "timestamp": "2025-09-07T08:03:00"}
+
+Run JSON Producer
 
 Windows:
 
-```shell
 .venv\Scripts\activate
-py -m producers.json_producer_case
-```
+py -m producers.json_producer_meyer
 
-Mac/Linux:
 
-```zsh
+Mac / Linux:
+
 source .venv/bin/activate
-python3 -m producers.json_producer_case
-```
+python3 -m producers.json_producer_meyer
 
-What did we name the topic used with JSON data?
-Hint: See the producer code and [.env](.env).
 
-## Task 4. Start a Kafka JSON Consumer
+Kafka topic: manufacturing_json_topic.
 
-This consumer processes streaming JSON data.
+---
 
-In VS Code, open a NEW terminal in your root project folder.
-Use the commands below to activate .venv, and start the consumer.
+## Task 4: Custom JSON Consumer
+
+The json_consumer_meyer.py consumer reads JSON messages and counts occurrences by machine status. It performs real-time analytics and logs results.
+
+Run JSON Consumer
 
 Windows:
 
-```shell
 .venv\Scripts\activate
-py -m consumers.json_consumer_case
-```
+py -m consumers.json_consumer_meyer
 
-Mac/Linux:
 
-```zsh
+Mac / Linux:
+
 source .venv/bin/activate
-python3 -m consumers.json_consumer_case
-```
+python3 -m consumers.json_consumer_meyer
 
-What did we name the topic used with JSON data?
-Hint: See the consumer code and [.env](.env).
 
----
-
-## Task 5. Start a Kafka CSV Producer
-
-Follow a similar process to start the csv producer.
-You will need to:
-
-1. Open a new terminal (yes another)!
-2. Activate your .venv.
-3. Know the command that works on your machine to execute python (e.g. py or python3).
-4. Know how to use the -m (module flag to run your file as a module).
-5. Know the full name of the module you want to run. Hint: Look in the producers folder.
-
-What did we name the topic used with csv data?
-Hint: See the producer code and [.env](.env).
-
-Hint: Windows:
-
-```shell
-.venv\Scripts\activate
-py -m producers.csv_producer_case
-```
-
-## Task 6. Start a Kafka CSV Consumer
-
-Follow a similar process to start the csv consumer.
-You will need to:
-
-1. Open a new terminal (yes another)!
-2. Activate your .venv.
-3. Know the command that works on your machine to execute python (e.g. py or python3).
-4. Know how to use the -m (module flag to run your file as a module).
-5. Know the full name of the module you want to run. Hint: Look in the consumers folder.
-
-What did we name the topic used with csv data?
-Hint: See the consumer code and [.env](.env).
-
-Hint: Windows:
-
-```shell
-.venv\Scripts\activate
-py -m consumers.csv_consumer_case
-```
+Kafka topic: manufacturing_json_topic.
 
 ---
 
-## How To Stop a Continuous Process
+## Task 5: Custom CSV Producer:
 
-To kill the terminal, hit CTRL c (hold both CTRL key and c key down at the same time).
+The csv_producer_meyer.py producer streams sensor readings (temperature and vibration) from manufacturing machines as CSV messages.
 
-## About the Smart Smoker (CSV Example)
+Example CSV messages:
 
-A food stall occurs when the internal temperature of food plateaus or
-stops rising during slow cooking, typically between 150°F and 170°F.
-This happens due to evaporative cooling as moisture escapes from the
-surface of the food. The plateau can last for hours, requiring
-adjustments like wrapping the food or raising the cooking temperature to
-overcome it. Cooking should continue until the food reaches the
-appropriate internal temperature for safe and proper doneness.
+timestamp,temperature,vibration
+2025-09-07 08:00:00,75.2,0.5
+2025-09-07 08:01:00,70.0,0.2
+2025-09-07 08:02:00,102.5,1.8
+2025-09-07 08:03:00,68.5,0.1
 
-The producer simulates a smart food thermometer, sending a temperature
-reading every 15 seconds. The consumer monitors these messages and
-maintains a time window of the last 5 readings.
-If the temperature varies by less than 2 degrees, the consumer alerts
-the BBQ master that a stall has been detected. This time window helps
-capture recent trends while filtering out minor fluctuations.
+Run CSV Producer
 
-## Later Work Sessions
+Windows:
 
-When resuming work on this project:
+.venv\Scripts\activate
+py -m producers.csv_producer_meyer
 
-1. Open the project repository folder in VS Code. 
-2. Start the Kafka service (use WSL if Windows) and keep the terminal running. 
-3. Activate your local project virtual environment (.venv) in your OS-specific terminal.
-4. Run `git pull` to get any changes made from the remote repo (on GitHub).
 
-## After Making Useful Changes
+Mac / Linux:
 
-1. Git add everything to source control (`git add .`)
-2. Git commit with a -m message.
-3. Git push to origin main.
+source .venv/bin/activate
+python3 -m producers.csv_producer_meyer
 
-```shell
-git add .
-git commit -m "your message in quotes"
-git push -u origin main
-```
 
-## Save Space
+Kafka topic: manufacturing_csv_topic.
 
-To save disk space, you can delete the .venv folder when not actively working on this project.
-You can always recreate it, activate it, and reinstall the necessary packages later.
-Managing Python virtual environments is a valuable skill.
+---
 
-## License
+## Task 6: Customer CSC Consumer
 
-This project is licensed under the MIT License as an example project.
-You are encouraged to fork, copy, explore, and modify the code as you like.
-See the [LICENSE](LICENSE.txt) file for more.
+The csv_consumer_meyer.py consumer monitors CSV messages. It maintains a sliding window of recent readings and raises alerts if temperature spikes or vibration thresholds are exceeded.
+
+Run CSV Consumer
+
+Windows:
+
+.venv\Scripts\activate
+py -m consumers.csv_consumer_meyer
+
+
+Mac / Linux:
+
+source .venv/bin/activate
+python3 -m consumers.csv_consumer_meyer
+
+
+Kafka topic: manufacturing_csv_topic.
+
+Stopping Producers or Consumers
+
+Press CTRL + C in the terminal to stop a continuous process.
