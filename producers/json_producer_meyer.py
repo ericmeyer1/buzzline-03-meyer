@@ -104,59 +104,29 @@ def generate_messages():
 
 
 def main():
-    """
-    Main entry point for this producer.
+    topic = "manufacturing_json_topic"
 
-    - Ensures the Kafka topic exists.
-    - Creates a Kafka producer using the `create_kafka_producer` utility.
-    - Streams generated JSON messages to the Kafka topic.
-    """
-
-    logger.info("START producer.")
+    # Step 1: Verify services
     verify_services()
 
-    # fetch .env content
-    topic = get_kafka_topic()
-    interval_secs = get_message_interval()
-
-    # Verify the data file exists
-    if not DATA_FILE.exists():
-        logger.error(f"Data file not found: {DATA_FILE}. Exiting.")
-        sys.exit(1)
-
-    # Create the Kafka producer
-    producer = create_kafka_producer(
+    # Step 2: Create Kafka producer
+    producer: KafkaProducer = create_kafka_producer(
         value_serializer=lambda x: json.dumps(x).encode("utf-8")
     )
-    if not producer:
-        logger.error("Failed to create Kafka producer. Exiting...")
-        sys.exit(3)
 
-    # Create topic if it doesn't exist
-    try:
-        create_kafka_topic(topic)
-        logger.info(f"Kafka topic '{topic}' is ready.")
-    except Exception as e:
-        logger.error(f"Failed to create or verify topic '{topic}': {e}")
-        sys.exit(1)
+    # Step 3: Create topic
+    create_kafka_topic(topic)
 
-    # Generate and send messages
-    logger.info(f"Starting message production to topic '{topic}'...")
+    # Step 4: Produce messages
     try:
-        for message_dict in generate_messages(DATA_FILE):
-            # Send message directly as a dictionary (producer handles serialization)
-            producer.send(topic, value=message_dict)
-            logger.info(f"Sent message to topic '{topic}': {message_dict}")
-            time.sleep(interval_secs)
+        for message in generate_messages():
+            producer.send(topic, value=message)
+            logger.info(f"Sent message to topic '{topic}': {message}")
     except KeyboardInterrupt:
         logger.warning("Producer interrupted by user.")
-    except Exception as e:
-        logger.error(f"Error during message production: {e}")
     finally:
-        producer.close(timeout=None)
+        producer.close()
         logger.info("Kafka producer closed.")
-
-    logger.info("END producer.")
 
 
 #####################################
